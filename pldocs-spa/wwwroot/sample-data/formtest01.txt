@@ -1,0 +1,11 @@
+<div style='margin:.5rem 0;padding:.5rem 0; border-bottom: solid black 1px;'>
+    The text in this can be as much or as little as the user wants.  The goal of this is to allow a company or organization to create a contract or permit system for themselves.
+</div>
+<div>Full Name: <input type="text" name="fullname" placeholder="Full Name" required/><div>
+<div>Your Birthday: <input type="date" name="birthday"/><div>
+<div>EMail: <input type="email" name="email" placeholder="you@domain.com" required/><div>
+<div>Your Title: <input type="text" name="title" placeholder="Your Title" /><div>
+<div style='margin:.5rem 0;padding:.5rem 0; border-top: solid black 1px;'>
+    Eventually I could be able to white label this, or fully customize it for a client's needs.  It is also an excellent example of what I can do.
+<div>
+	

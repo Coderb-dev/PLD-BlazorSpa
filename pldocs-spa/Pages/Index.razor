@@ -1,0 +1,27 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<div>
+    <p>Rendering HTML from a file, and inserting it into a form</p>
+</div>
+<div>
+    <form action="submit">
+        @FileFragment
+        <input type="submit">
+    </form>
+</div>
+
+
+@code {
+    private dynamic strFormData;
+    RenderFragment FileFragment;        
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        strFormData = await Http.GetStringAsync("sample-data/formtest01.txt");
+        FileFragment = (builder) =>
+        {
+            builder.AddMarkupContent(0,strFormData);
+        };
+    }
+}
